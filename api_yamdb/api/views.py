@@ -40,7 +40,6 @@ class CategoryGenreViewSet(LCDViewSet):
     lookup_field = 'slug'
 
 
-#трай
 class CategoryViewSet(CategoryGenreViewSet):
     queryset = Category.objects.all()
     serializer_class = CategorySerializer
