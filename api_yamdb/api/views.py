@@ -16,7 +16,7 @@ from api_yamdb.settings import FROM_EMAIL
 from reviews.models import (
     Category, Genre, Review, Title, User,
     CONFIRMATION_CODE_SIZE, RESET_CONFIRMATION_CODE)
-    
+
 from .filters import TitlesFilter
 from .mixins import LCDViewSet
 from .permissions import IsAdmin, ReadOnly, IsAuthorOrStaffOrReadOnly
