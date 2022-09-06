@@ -98,6 +98,7 @@ class UserViewSet(viewsets.ModelViewSet):
     serializer_class = UserSerializer
     permission_classes = (IsAdmin,)
     lookup_field = 'username'
+    #так надо
 
     @action(('GET', 'PATCH'), False,
             permission_classes=(permissions.IsAuthenticated,))
