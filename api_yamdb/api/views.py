@@ -109,7 +109,7 @@ class UserViewSet(viewsets.ModelViewSet):
         serializer.is_valid(raise_exception=True)
         serializer.save()
         return Response(serializer.data, status=status.HTTP_200_OK)
-        # очь странные дела
+        # очь странные дел
 
 
 class SignUpView(views.APIView):
