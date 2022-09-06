@@ -56,7 +56,6 @@ class TitleViewSet(viewsets.ModelViewSet):
     filter_backends = (DjangoFilterBackend, filters.OrderingFilter)
     filterset_class = TitlesFilter
     ordering_fields = ('rating',)
-    # ordering = ('-rating',)
 
     def get_serializer_class(self):
         if self.action in ('list', 'retrieve'):
