@@ -18,6 +18,7 @@ class GenreSerializer(serializers.ModelSerializer):
     class Meta:
         model = Genre
         exclude = ('id',)
+#проба
 
 
 class TitleReadSerializer(serializers.ModelSerializer):
